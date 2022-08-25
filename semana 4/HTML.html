@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: lightskyblue;">
+    <header>
+<img src="/IMG/INCAP.png" widht="100" height="100" alt="incap">
+<h1>LISTAS EN HTML</h1>
+<H2>MENU NAVEGACION</H2>
+</header>
+<nav>
+<ul>   
+    <li type="disc" style="color:blue;">home</li>
+    <li type="square">productos</li>
+    <li type="circle">servicios</li>
+    <li>contacto</li>
+</ul>
+</nav> 
+<section>
+    <!--method get pasa los datos por la url-->
+
+<form action="datos.php"method="post">
+<fieldset>
+
+<label >NOMBRE COMPLETO:</label>
+<input name="NOMBRE" type="TEXT" placeholder="ingrese su nombre completo" required="">
+<br><br>
+
+<label >E-mail:</label>
+<input name="email" type="TEXT" placeholder="ingrese su email" required="">
+<br><br>
+
+<label >contraseña:</label>
+<input name="contraseña" type="password" placeholder="ingrese su contraseña" required="">
+<br><br>
+
+<label>seleccione tus hobbies:
+</label>
+<br>
+    <input name="cine" type="checkbox">cine<br>
+    <input name="lectura" type="checkbox">lectura<br>
+    <input name="deporte" type="checkbox">deporte<br>
+<br>
+
+<br>
+<!--estado civil-->
+<label>Estado civil:</label><br>
+<input name="estcivil" type="radio" value="casado">casado(a)<br> 
+<input name="estcivil" type="radio" value="casado">soltero(a)<br> 
+<input name="estcivil" type="radio" value="casado">viudo(a)<br>
+<input name="estcivil" type="radio" value="casado">Con ganas de morirme<br> 
+<br>
+<br>
+
+<!--selleccionar opcion lista-->
+<label>programas tecnicos</label>
+<select name="select">
+    <option>seleccione programa...</option>
+    <option>sistemas</option>
+    <option>diseño grafico</option>
+    <option>contabilidad</option>
+</select>
+<br>
+<br>
+<label>Tu comentario:</label><br>
+<textarea name="mensaje" rows="s" cols="40"></textarea>
+</fieldset>
+<br><br>
+<!--botones comentario-->
+<button type="submit">Enviar</button>
+<button type="submit">Cancelar</button>
+<br>
+<br>
+</form>
+</section>
+<!--seccion de pie de pagina-->
+<footer>
+    derechos reservados &copy;2022&#64;NOMBRE STD
+</footer>
+</body>
+</html>
